@@ -136,7 +136,8 @@ then confirm to transcribe. Text is inserted where your selection was when
 recording started, ready for you to review and edit before sending.
 
 Transcription uses the first language in your iPhone's preferred language list
-(Settings > General > Language & Region) that Apple's speech model supports.
+(Settings > General > Language & Region) that Apple's speech model supports,
+or English if none is supported.
 
 The first use may download Apple's speech model and needs a network connection.
 Later transcription works offline for that language. Recordings can be up to five

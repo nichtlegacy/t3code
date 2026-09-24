@@ -140,6 +140,12 @@ describe("resolveTranscriptCommit", () => {
       kind: "commit",
       text: "Schön Grüße",
     });
+
+    const combiningMark = draft({ text: "नमस्ते", selection: { start: 6, end: 6 } });
+    expect(resolveTranscriptCommit(combiningMark, combiningMark, "दुनिया", "hi-IN")).toMatchObject({
+      kind: "commit",
+      text: "नमस्ते दुनिया",
+    });
   });
 
   it("does not add English boundary spaces to CJK or selected inline text", () => {

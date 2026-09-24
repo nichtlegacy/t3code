@@ -102,7 +102,7 @@ export function resolveTranscriptCommit(
     const right = captured.text[captured.selection.start];
     const leftNeedsBoundary =
       left !== undefined &&
-      /[\p{L}\p{N}.!?,:;)\]}'"]/u.test(left) &&
+      /[\p{L}\p{M}\p{N}.!?,:;)\]}'"]/u.test(left) &&
       (right === undefined || /\s/.test(right));
     const rightNeedsBoundary =
       right !== undefined &&
